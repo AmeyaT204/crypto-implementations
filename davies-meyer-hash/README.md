@@ -38,7 +38,7 @@ All chaining values z_0, ..., z_{l+1} are handled as 256-bit integers.
 
 **NOTE:** the hash is unkeyed (no Gen), and since f has
 a 512-bit key, h compresses 256 + 512 bits to 256 bits rather than 2n to n.
-This does not affect the structure of the construction compared to the standard Davis Meyer.
+This does not affect the structure of the construction compared to the standard Davies Meyer.
 
 **Relation to SHA-256:** it uses SHA-256's block cipher, but follows the
 textbook construction (XOR feed-forward, zero padding, separate length block,
