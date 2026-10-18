@@ -7,7 +7,7 @@ Davies-Meyer hash: an arbitrary-length hash built from a block cipher.
 
 All chaining values z_0, z_1, ..., z_{l+1} are 256-bit integers.
 
-Run:  python3 davies_meyer_hash.py
+Run:  python3 merkle_damgard_hash.py
 """
 from sha256_cipher import f
 

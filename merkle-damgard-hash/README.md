@@ -1,4 +1,4 @@
-# Davies-Meyer Hash
+# Merkle-Damgard Hash
 
 An arbitrary-length hash function built from a block cipher, in pure Python,
 following the textbook constructions (Katz-Lindell, Ch. 6-7):
@@ -12,7 +12,7 @@ following the textbook constructions (Katz-Lindell, Ch. 6-7):
 | File | Contents |
 |---|---|
 | `sha256_cipher.py` | **External module.** The block cipher `f(k, m)` used inside SHA-256 (SHACAL-2, per FIPS 180-4). Used as a black box. |
-| `davies_meyer_hash.py` | The construction: `h` (Davies-Meyer), `pad` and `H` (Merkle-Damgard), conversions, and `main`. |
+| `merkle_damgard_hash.py` | The construction: `h` (Davies-Meyer), `pad` and `H` (Merkle-Damgard), conversions, and `main`. |
 | `test_collisions.py` | Collision search on random inputs. |
 
 ## Construction
@@ -46,7 +46,7 @@ IV = 0), so outputs differ from SHA-256.
 
 ## Run
 
-    python3 davies_meyer_hash.py
+    python3 merkle_damgard_hash.py
 
 Example: `abc` -> `a8b49f51a60c656f795b92a80ad966bd867f27f91a1f2060cb1cd8724d9bfae6`
 
